@@ -25,7 +25,8 @@ class HomeView extends StatelessWidget {
                 icon: Icon(
                   UniconsLine.plus_square,
                   color: Theme.of(context).iconTheme.color,
-                ))
+                )
+                )
           ]),
       body: ListView(padding: EdgeInsets.all(16), children: [
         Card(

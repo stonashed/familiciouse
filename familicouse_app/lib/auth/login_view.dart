@@ -1,3 +1,4 @@
+import 'package:familicouse_app/auth/create_account.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -58,7 +59,12 @@ class LoginView extends StatelessWidget {
           Align(
             alignment: Alignment.centerRight,
             child: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
+                  return const CreateAccount();
+                }));
+              },
               child: Text(
                 'Create  Account',
                 style: TextStyle(color: Colors.grey),

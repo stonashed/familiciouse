@@ -1,4 +1,6 @@
+import 'package:familicouse_app/auth/create_account.dart';
 import 'package:familicouse_app/auth/login_view.dart';
+import 'package:familicouse_app/favourite_view.dart';
 import 'package:familicouse_app/home_view.dart';
 import 'package:familicouse_app/index_view.dart';
 import 'package:flutter/material.dart';
@@ -66,7 +68,7 @@ class MyApp extends StatelessWidget {
               colorScheme: ColorScheme.dark(primary: Colors.black),
               textTheme: ButtonTextTheme.primary)),
       themeMode: ThemeMode.system,
-      home: const LoginView(),
+      home: const CreateAccount(),
     );
   }
 }
